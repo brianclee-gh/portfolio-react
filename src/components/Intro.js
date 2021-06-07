@@ -6,23 +6,25 @@ import { faEnvelope } from '../../node_modules/@fortawesome/free-regular-svg-ico
 
 const Intro = () => {
   return (
-    <div id='intro'>
-      <div className='wrapper'>
-        <img className='background-image' src={wallpaper} alt='background'></img>
-        <div id='social-btns'>
-          <a href="https://linkedin.com" alt="linkedin" className='social-btn' id='linkedin'>
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="https://github.com/brianclee-gh/" alt="github" className='social-btn' id='github'>
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href="mailto:blee0613@gmail.com" alt="email" className='social-btn' id='email'>
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
-        </div>
+    <section id='intro'>
+      <div id='intro-container'>
+        <div className='wrapper'>
+          <img className='background-image' src={ wallpaper } alt='background'></img>
+          <div id='social-btns'>
+            <a href="https://linkedin.com" alt="linkedin" className='social-btn' id='linkedin'>
+              <FontAwesomeIcon icon={ faLinkedin } />
+            </a>
+            <a href="https://github.com/brianclee-gh/" alt="github" className='social-btn' id='github'>
+              <FontAwesomeIcon icon={ faGithub } />
+            </a>
+            <a href="mailto:blee0613@gmail.com" alt="email" className='social-btn' id='email'>
+              <FontAwesomeIcon icon={ faEnvelope } />
+            </a>
+          </div>
 
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

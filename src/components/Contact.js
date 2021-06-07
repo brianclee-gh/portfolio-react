@@ -2,17 +2,20 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id='contact'>
-      <div id='contact-title'>
-        <h1>Contact Me</h1>
-      </div>
-      <form>Contact form</form>
-        <div id='contact-me'>
-          email, gh, linkedin
+    <section id='contact'>
+      <div id='contact-container'>
+        <div id='contact-title'>
+          <h1>Contact Me</h1>
         </div>
-
-
-    </div>
+        <div id='contact-me-container'>
+          <ul id='contact-me' className='list'>
+            <li>LinkedIn</li>
+            <li>Github</li>
+            <li>Email</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   )
 }
 

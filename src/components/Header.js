@@ -1,16 +1,16 @@
 import React from 'react';
-import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome';
-import { faBars } from '../../node_modules/@fortawesome/free-solid-svg-icons';
+import Slideout from '../helpers/Slideout'
 
 function Header() {
 
     return (
-        <div id='header' className='box-shadow'>
+      <section id='header'>
+        <div id='header-container' className='box-shadow'>
           <nav id='nav'>
             <div className='header-name'>
               <h3>BRIAN <span>CHRISTOPHER</span> LEE</h3>
             </div>
-            <ul className='links'>
+            <ul className='links list'>
               <a href="#top">Home</a>
               <a href="#aboutme">About</a>
               <a href="#skills">Skills</a>
@@ -18,10 +18,10 @@ function Header() {
               <li>Resume</li>
               <div className='theme-toggle-container'></div>
             </ul>
-
-            <div className='burger-menu'><FontAwesomeIcon icon={faBars} /></div>
+            <Slideout />
           </nav>
         </div>
+      </section>
     )
 }
 
