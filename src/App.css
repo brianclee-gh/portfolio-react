@@ -1,0 +1,196 @@
+/* Header */
+
+#header {
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+h3 span {
+  color: #aa2e25;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.burger-menu:hover {
+  color: #aa2e25;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.links a,
+.links li {
+  margin: 0 0.7rem;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover,
+.links li:hover {
+  text-decoration: underline;
+  color: #aa2e25;
+}
+
+/* Intro */
+
+
+.wrapper {
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  /* background: linear-gradient(0deg, #000088 30%, #ffffff44 100%); */
+  z-index: -1;
+}
+
+#social-btns {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.social-btn {
+  color: white;
+  border: 1px solid white;
+  padding: 0.65rem;
+  cursor: pointer;
+  font-size: 22px;
+  transition: all 0.5s ease-out;
+}
+
+.social-btn:hover {
+  opacity: 0.8;
+  /* background-color: white; */
+}
+
+#linkedin:hover {
+  background-color:#0072b1;
+}
+
+#github:hover {
+  background-color: black;
+}
+
+#email:hover {
+  background-color: #BB001B;
+}
+
+/* About Me */
+
+#aboutme-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4rem;
+}
+
+#aboutme-container h2 {
+  padding-top: 4rem;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#aboutme-container p {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 0 5rem 0;
+  max-width: 67%;
+  font-size: 1rem;
+}
+
+/* Skills */
+
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Card */
+
+.card {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  min-width: 200px;
+  background-color: darkgrey;
+}
+
+.card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+.list-item {
+  margin: 0.5rem 0;
+}
+
+.list-item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-image {
+  width: 40px;
+}
+
+.card ul li {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .header-name > h3 > span {display: none }
+}
+
+@media screen and (max-width: 600px) {
+  .links { display: none }
+  .burger-menu { display: flex }
+  #social-btns { width: 120px }
+  .social-btn {
+    font-size: 18px;
+    padding: 0.5rem;
+  }
+}
