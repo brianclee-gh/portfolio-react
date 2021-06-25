@@ -9,6 +9,9 @@ import Contact from './components/Contact';
 import { FontAwesomeIcon } from '../node_modules/@fortawesome/react-fontawesome';
 import { faArrowUp } from '../node_modules/@fortawesome/free-solid-svg-icons';
 
+// TODO
+// Theme switching
+
 function App() {
 
   const handleScroll = () => {

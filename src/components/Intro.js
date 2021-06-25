@@ -8,7 +8,11 @@ const Intro = () => {
   return (
     <section id='intro'>
       <div id='intro-container'>
-        <div className='wrapper'>
+        <div className='img-wrapper'>
+          {/* <div id='intro-text'>
+            <h1>Hi, I'm Brian!</h1>
+          </div> */}
+
           <img className='background-image' src={ wallpaper } alt='background'></img>
           <div id='social-btns'>
             <a href="https://linkedin.com" alt="linkedin" className='social-btn' id='linkedin'>

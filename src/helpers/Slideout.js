@@ -26,6 +26,7 @@ function Slideout() {
               onClick={ toggleMenu }
             > X
             </button>
+            <h3>BRIAN LEE</h3>
             <a href="#top" onClick={ toggleMenu }>HOME</a>
             <a href="#aboutme" onClick={ toggleMenu }>ABOUT</a>
             <a href="#skills" onClick={ toggleMenu }>SKILLS</a>

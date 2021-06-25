@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
+:root {
+  --material-red: #aa2e25;
+  --email-red: #BB001B;
+  --linkedin-blue: #0072b1;
+}
+
 /* Header */
 
 #header {
@@ -16,7 +22,7 @@
 }
 
 h3 span {
-  color: #aa2e25;
+  color: var(--material-red);
 }
 
 #nav {
@@ -42,10 +48,6 @@ h3 span {
   transition: all 0.5s ease;
 }
 
-.burger-menu:hover {
-  color: #aa2e25;
-}
-
 .list {
   list-style: none;
   display: flex;
@@ -64,9 +66,10 @@ h3 span {
 }
 
 .links a:hover,
-.links li:hover {
+.links li:hover,
+.burger-menu:hover {
   text-decoration: underline;
-  color: #aa2e25;
+  color: var(--material-red);
 }
 
 svg {
@@ -87,7 +90,7 @@ ul {
   width: 180px;
   height: 100vh;
   box-shadow: 0 0 10px #85888C;
-  padding: 50px 30px;
+  padding: 50px 30px 50px 50px;
   top: 0;
   left: 0;
   background-color: #F5F6FA;
@@ -141,15 +144,27 @@ a {
 /* Intro */
 
 
-.wrapper {
+.img-wrapper {
   margin-top: 3.5rem;
   position: relative;
+  text-align: center;
 }
 
 .background-image {
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
+  height: auto;
   /* background: linear-gradient(0deg, #000088 30%, #ffffff44 100%); */
   z-index: -1;
+}
+
+#intro-text {
+  position: absolute;
+  top: 8px;
+  left: 25px;
+  font-size: 40px;
+  display: flex;
+  text-shadow: 2px 2px #fff;
 }
 
 #social-btns {
@@ -176,15 +191,15 @@ a {
 }
 
 #linkedin:hover {
-  background-color:#0072b1;
+  background-color: var(--linkedin-blue);
 }
 
 #github:hover {
-  background-color: black;
+  background-color: #000;
 }
 
 #email:hover {
-  background-color: #BB001B;
+  background-color: var(--email-red);
 }
 
 /* About Me */
@@ -211,6 +226,11 @@ a {
 }
 
 /* Skills */
+
+#skills-container {
+  border: 1px solid black;
+  margin: 15px;
+}
 
 #skills-list {
   display: flex;
@@ -259,6 +279,26 @@ a {
   font-weight: bold;
 }
 
+/* Projects */
+
+.project-btn {
+  padding: 15px;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid var(--material-red);
+  color: var(--material-red);
+  background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.project-btn:hover {
+
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: var(--material-red);
+}
+
 
 /* Scroll */
 
@@ -278,18 +318,98 @@ a {
   height: 40px;
   width: 40px;
   /* transform: translateY(100px); */
-  opacity: 0.2;
+  opacity: 0;
   transition: all 0.5s ease;
   border: none;
   cursor: pointer;
-  background-color: #aa2e25;
+  background-color: var(--material-red);
   color: white;
 }
 
-.scrollToTopBtn:hover {
-  opacity: 0.7;
+/* Portfolio */
+
+#projects-container {
+  display: flex;
+  flex-direction: column;
 }
 
+#projects-card-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 1rem; */
+  flex-wrap: wrap;
+}
+
+.project-card, .card {
+  width: 350px;
+  margin: 2rem 1rem 0 1rem;
+  min-width: 350px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* border-radius: 5px; */
+  padding: 15px;
+  background-color: #fff;
+}
+
+.project-card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.project-card-desc h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.project-card-desc p {
+  font-size: 12px;
+  font-style: italic;
+  width: 80%;
+  text-align: center;
+}
+
+.portfolio-img {
+  width: 350px;
+}
+
+/* Contact Me */
+
+#contact-container {
+  /* border: 1px solid red; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#contact-me li {
+  margin: 0px 0.4rem
+}
+
+#contact-me li:hover {
+  color: var(--material-red);
+}
+
+@media (max-width: 830px) {
+  .row {
+    justify-content: center;
+  }
+}
 
 
 @media (max-width: 750px) {
@@ -299,6 +419,7 @@ a {
 @media screen and (max-width: 600px) {
   .links { display: none }
   .burger-menu { display: flex }
+  #intro-text { font-size: 25px }
   #social-btns { width: 120px }
   .social-btn {
     font-size: 18px;
@@ -306,5 +427,8 @@ a {
   }
   #menu-container {
     display: flex;
+  }
+  .row {
+    justify-content: center;
   }
 }

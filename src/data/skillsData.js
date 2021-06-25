@@ -3,25 +3,32 @@ import html from './images/html.svg';
 import css from './images/css.svg';
 
 const skillsData = [
-  {
-    title: 'Languages',
-    items: {
-      Javascript: js,
-      HTML: html,
-      CSS: css
-    }
-  },
+  // {
+  //   title: 'Languages',
+  //   items: {
+  //     Javascript: js,
+  //     HTML: html,
+  //     CSS: css,
+  //     SCSS: '',
+  //   }
+  // },
   {
     title: 'Front End',
     items: {
-      React: ``,
-      'Node.js': ``,
+      Javascript: js,
+      HTML: html,
+      CSS: css,
+      SCSS: '',
+      'React/Redux': ``,
       jQuery: ``,
+
     }
   },
   {
     title: 'Back End',
     items: {
+      'Node.js': ``,
+      'Express': ``,
       Firebase: ``,
       MongoDB: ``
     }
@@ -32,7 +39,8 @@ const skillsData = [
       Git: ``,
       npm: ``,
       Jest: ``,
-      Webpack: ``
+      Webpack: ``,
+      Heroku: ``
     }
   }
 ]

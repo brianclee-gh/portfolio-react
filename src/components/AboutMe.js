@@ -7,8 +7,7 @@ const AboutMe = () => {
         <div id='aboutme-title'>
           <h2>About Me </h2>
         </div>
-        <p> Hey, I'm Brian! I'm a former dentist looking for a big change in
-          my career. My coding journey started a year ago while stuck at home
+        <p> Hey, I'm Brian! I'm a former dentist turned front-end developer. My coding journey started a year ago while stuck at home
           during the 2020 pandemic. With not much else to do, a friend recommended
           that I learn web development through <a href='https://theodinproject.com/'>The Odin
           Project's</a> Full Stack Javascript Cirriculum.
