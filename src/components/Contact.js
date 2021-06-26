@@ -12,11 +12,11 @@ const Contact = () => {
         </div>
         <div id='contact-me-container'>
           <ul id='contact-me' className='list'>
-            <li><FontAwesomeIcon icon={ faLinkedin } /></li>
-            <li><FontAwesomeIcon icon={ faGithub } /></li>
-            <li><FontAwesomeIcon icon={ faEnvelope } /></li>
-            <li><FontAwesomeIcon icon={ faInstagram } /></li>
-            <li><FontAwesomeIcon icon={ faFacebook } /></li>
+            <li><a href="https://linkedin.com"><FontAwesomeIcon icon={ faLinkedin } /></a></li>
+            <li><a href="https://github.com"><FontAwesomeIcon icon={ faGithub } /></a></li>
+            <li><a href="mailto:blee0613@gmail.com"><FontAwesomeIcon icon={ faEnvelope } /></a></li>
+            <li><a href="https://instagram.com"><FontAwesomeIcon icon={ faInstagram } /></a></li>
+            <li><a href="https://facebook.com"><FontAwesomeIcon icon={ faFacebook } /></a></li>
 
             {/* <li>Resume VV</li> */}
           </ul>

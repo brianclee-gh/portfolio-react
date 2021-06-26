@@ -7,7 +7,7 @@ const Card = ({ data }) => {
       <li className='list-item' key={i}>
         <div className='list-item-description'>
           <img alt={key} className='list-image' src={data.items[key]}></img>
-          <span>{key}</span>
+          {/* <span>{key}</span> */}
         </div>
       </li>
     ))
