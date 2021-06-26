@@ -15,13 +15,13 @@ const Intro = () => {
 
           <img className='background-image' src={ wallpaper } alt='background'></img>
           <div id='social-btns'>
-            <a href="https://linkedin.com" alt="linkedin" className='social-btn' id='linkedin'>
+            <a href="https://linkedin.com" alt="linkedin" className='social-btn linkedin' id='linkedin'>
               <FontAwesomeIcon icon={ faLinkedin } />
             </a>
-            <a href="https://github.com/brianclee-gh/" alt="github" className='social-btn' id='github'>
+            <a href="https://github.com/brianclee-gh/" alt="github" className='social-btn github' id='github'>
               <FontAwesomeIcon icon={ faGithub } />
             </a>
-            <a href="mailto:blee0613@gmail.com" alt="email" className='social-btn' id='email'>
+            <a href="mailto:blee0613@gmail.com" alt="email" className='social-btn email' id='email'>
               <FontAwesomeIcon icon={ faEnvelope } />
             </a>
           </div>
