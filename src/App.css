@@ -21,6 +21,10 @@
   user-select: none; /* Standard */
 }
 
+h3 {
+  color: white;
+}
+
 h3 span {
   color: var(--material-red);
 }
@@ -34,7 +38,8 @@ h3 span {
   left: 0;
   top: 0;
   z-index: 1030;
-  background-color: white;
+  /* background-color: rgb(41, 41, 41);  */
+  background-color: #292929;
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
   box-shadow: 0 4px 6px -6px #222;
@@ -62,7 +67,7 @@ h3 span {
   align-items: center;
   transition: all 0.5s ease;
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .links a:hover,
@@ -215,6 +220,7 @@ a {
   font-size: 2rem;
   margin: 0 auto;
   width: 70%;
+
 }
 
 #aboutme-container p {
@@ -223,7 +229,41 @@ a {
   padding: 2rem 0 5rem 0;
   max-width: 67%;
   font-size: 1rem;
+  line-height: 1.5rem;
+  /* color: white; */
 }
+/*
+.diagonal-box{
+  background-color: #f87f73;
+  background-image: -webkit-linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%);
+  background-image: linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%);
+} */
+
+/* .diagonal-box {
+	background-image: linear-gradient(45deg, #6303B1, #ff0099);
+  transform: skewY(-11deg);
+  position: relative;
+}
+
+.diagonal-box:before {
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+    transform: skewY(-11deg);
+}
+
+
+.diagonal-content {
+  transform: skewY(11deg);
+  position: relative;
+} */
+/* .diagonal-content {
+	max-width: 50em;
+    margin: 0 auto;
+} */
 
 /* Skills */
 
@@ -331,6 +371,22 @@ a {
 #projects-container {
   display: flex;
   flex-direction: column;
+  background-color: #ffccbc;
+  background-image: -webkit-linear-gradient( -28deg, #ffccbc 0%, #ffccbc 60%, #e0f7fa 60%, #e0f7fa 60%);
+  background-image: linear-gradient( -28deg, #ffccbc 0%, #ffccbc 60%, #e0f7fa 60%, #e0f7fa 60%);
+  /* background-color: #f87f73;
+  background-image: -webkit-linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%);
+  background-image: linear-gradient( -28deg, #f87f73 0%, #f87f73 60%, #292423 60%, #292423 60%); */
+  padding: 2rem;
+}
+
+#projects-title {
+  color: black;
+  font-size: 42px;
+}
+
+#projects-container h3 {
+  color: black;
 }
 
 #projects-card-container {
