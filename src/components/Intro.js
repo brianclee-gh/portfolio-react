@@ -15,7 +15,7 @@ const Intro = () => {
 
           <img className='background-image' src={ wallpaper } alt='background'></img>
           <div id='social-btns'>
-            <a href="https://linkedin.com" alt="linkedin" className='social-btn linkedin' id='linkedin'>
+            <a href="https://www.linkedin.com/in/brian-lee-548606193/" alt="linkedin" className='social-btn linkedin' id='linkedin'>
               <FontAwesomeIcon icon={ faLinkedin } />
             </a>
             <a href="https://github.com/brianclee-gh/" alt="github" className='social-btn github' id='github'>
