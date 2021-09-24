@@ -18,11 +18,11 @@ const skillsData = [
   {
     title: 'Front End',
     items: {
+      'React/Redux': react,
       Javascript: js,
       HTML: html,
       CSS: css,
       SCSS: sass,
-      'React/Redux': react,
       jQuery: jquery,
 
     }
@@ -31,9 +31,12 @@ const skillsData = [
     title: 'Back End',
     items: {
       'Node.js': node,
-      // 'Express': ``,
+      'Express': ``,
       Firebase: firebase,
-      MongoDB: mongodb
+      MongoDB: mongodb,
+      AWS: '',
+      Mongoose: '',
+
     }
   },
   {
