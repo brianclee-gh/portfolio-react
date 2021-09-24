@@ -1,5 +1,7 @@
 import React from 'react'
 import todolist from '../data/images/todolist.png'
+import projectData from '../data/projectData'
+import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
@@ -8,7 +10,7 @@ const Projects = () => {
         <div id='projects-title'>
           <h1>Projects</h1>
         </div>
-
+        { projectData ? projectData.map((project) => <ProjectCard project={project} />) : '' }
         <div id='projects-card-container'>
           <div className='row' id='upper-row'>
           <div className='project-card'>
