@@ -1,7 +1,10 @@
+import cubePhoto from '../data/images/projects/cube.png'
+import atelierPhoto from '../data/images/projects/atelier.png'
+
 const projectData = [
   {
     title: 'CUBE',
-    imageSrc: '',
+    imageSrc: cubePhoto,
     linkAlt: 'CUBE product page',
     description: 'Modernized retail product website',
     ghLink: 'https://github.com/brianclee-gh/cube',
@@ -14,7 +17,7 @@ const projectData = [
   },
   {
     title: 'Atelier',
-    imageSrc: '',
+    imageSrc: atelierPhoto,
     linkAlt: 'Atelier image',
     description: 'A RESTful API built to serve product data for an e-commerce shopping site.',
     ghLink: 'https://github.com/brianclee-gh/atelier',

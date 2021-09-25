@@ -1,5 +1,5 @@
 import React from 'react'
-import todolist from '../data/images/todolist.png'
+import todolist from '../data/images/projects/todolist.png'
 import projectData from '../data/projectData'
 import ProjectCard from './ProjectCard'
 
