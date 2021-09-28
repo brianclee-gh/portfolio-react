@@ -24,7 +24,7 @@ const skillsData = [
       CSS: css,
       SCSS: sass,
       jQuery: jquery,
-
+      'Next.js': '',
     }
   },
   {
@@ -34,9 +34,17 @@ const skillsData = [
       'Express': ``,
       Firebase: firebase,
       MongoDB: mongodb,
-      AWS: '',
+      PostgreSQL: '',
       Mongoose: '',
-
+    }
+  },
+  {
+    title: 'Deployment',
+    items: {
+      Docker: '',
+      AWS: '',
+      Vercel: '',
+      NGINX: '',
     }
   },
   {
