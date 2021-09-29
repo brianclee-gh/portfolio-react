@@ -10,7 +10,13 @@ const Projects = () => {
         <div id='projects-title'>
           <h1>Projects</h1>
         </div>
-        { projectData ? projectData.map((project) => <ProjectCard project={project} />) : '' }
+        { projectData
+          ?
+            <div class='row'>
+              {projectData.map((project) => <ProjectCard project={project} />) }
+            </div>
+          : ''
+        }
         <div id='projects-card-container'>
           <div className='row' id='upper-row'>
           <div className='project-card'>

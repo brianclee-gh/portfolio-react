@@ -17,7 +17,7 @@ const Card = ({ data }) => {
   return (
     <div className='card'>
       <div className='card-title'>
-        <h3>{data.title}</h3>
+        <h3 className='card-skill-title'>{data.title}</h3>
       </div>
       <ul className='card-list'>
         {listItems()}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Slideout from '../helpers/Slideout'
+import resume from '../data/resume.pdf';
 
 function Header() {
 
@@ -15,7 +16,7 @@ function Header() {
               <a href="#aboutme">About</a>
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
-              <li>Resume</li>
+              <a href={resume} download>Resume</a>
               <div className='theme-toggle-container'></div>
             </ul>
             <Slideout />

@@ -1,18 +1,28 @@
-import js from './images/js.svg';
-import html from './images/html.svg';
-import css from './images/css.svg';
-import sass from './images/sass.jpg';
-import react from './images/react.png';
-import jquery from './images/jquery.png';
-import node from './images/node.png';
-import firebase from './images/firebase.png';
-import mongodb from './images/mongodb.png';
-import webpack from './images/webpack.svg';
+import js from './images/skills/js.svg';
+import html from './images/skills/html.svg';
+import css from './images/skills/css.svg';
+import sass from './images/skills/sass.jpg';
+import react from './images/skills/react.svg';
+import nextjs from './images/skills/nextjs.svg';
+import jquery from './images/skills/jquery.png';
 
-import git from './images/git.png';
-import npm from './images/npm.png';
-import jest from './images/jest.png';
-import heroku from './images/heroku.png';
+import node from './images/skills/node.png';
+import express from './images/skills/express.png';
+import firebase from './images/skills/firebase.png';
+import mongodb from './images/skills/mongodb.png';
+import postgres from './images/skills/postgres.svg';
+import webpack from './images/skills/webpack.svg';
+import mysql from './images/skills/mysql.svg';
+
+import docker from './images/skills/docker.png';
+import aws from './images/skills/aws.svg';
+import vercel from './images/skills/vercel.png';
+import nginx from './images/skills/nginx.png';
+
+import git from './images/skills/git.png';
+import npm from './images/skills/npm.png';
+import jest from './images/skills/jest.png';
+import heroku from './images/skills/heroku.png';
 
 const skillsData = [
   {
@@ -24,27 +34,28 @@ const skillsData = [
       CSS: css,
       SCSS: sass,
       jQuery: jquery,
-      'Next.js': '',
+      'Next.js': nextjs,
     }
   },
   {
     title: 'Back End',
     items: {
       'Node.js': node,
-      'Express': ``,
+      'Express': express,
       Firebase: firebase,
       MongoDB: mongodb,
-      PostgreSQL: '',
-      Mongoose: '',
+      PostgreSQL: postgres,
+      MySQL: mysql,
+      // Mongoose: '',
     }
   },
   {
     title: 'Deployment',
     items: {
-      Docker: '',
-      AWS: '',
-      Vercel: '',
-      NGINX: '',
+      Docker: docker,
+      AWS: aws,
+      Vercel: vercel,
+      NGINX: nginx,
     }
   },
   {

@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
     <div className='project-card-desc'>
       <h3>{ project.title }</h3>
       <p>{ project.description }</p>
-      <ul>
+      <ul className='project-tech-list'>
       { project.techs ? project.techs.map((tech) => <li>{tech}</li>) : ''}
       </ul>
       <a href={project.ghLink} alt={project.linkAlt}>
