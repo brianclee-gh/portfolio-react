@@ -1,5 +1,6 @@
 import cubePhoto from '../data/images/projects/cube.png'
 import atelierPhoto from '../data/images/projects/atelier.png'
+import wellnessPhoto from '../data/images/projects/wellness.png'
 
 const projectData = [
   {
@@ -32,7 +33,7 @@ const projectData = [
   },
   {
     title: 'Unlocking Wellness',
-    imageSrc: '',
+    imageSrc: wellnessPhoto,
     linkAlt: 'Unlocking Wellness image',
     description: `A health-care web and mobile app that allows patients to find and assemble
       a team of providers who are specially trained to care for marginalized communities and people groups.`,
